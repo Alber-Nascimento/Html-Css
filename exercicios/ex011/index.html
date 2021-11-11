@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esses arquivos em vários dispositivos diferentes, ou simplesmente, modifique o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem flexível">
+        <p>Usaremos as tags IMG + (SOURCE:MEDIA:TYPE com os parâmetros MAX-WIDTH, SRCSET E TYPE).</p>
+    </picture>        
+    <h1>Reproduzindo Áudios</h1>
+    <p>1. Através da tag AUDIO - MP3 - WAV - OGG</p>
+    <audio src="midias/kids.mp3" controls autoplay></audio>
+    <h1>2. Segunda maneira de exibir áudios, tag AUDIO montada na  com o parâmetros source src e type.</h1>
+    <audio preload="metadata" controls>
+        <source src="midias/guanabara-pod.mp3" type="audio/mpeg">
+        <source src="midias/guanabara-pod.ogg" type="audio/ogg">
+        <source src="midias/guanabara-pod.wav" type="audio/wav">
+        <p>Infelizmente seu naveegador não consegue reproduzir áudio. <a href="midias/guanabara-pod.mp3">clique aqui para fazer o download do arquivo.</a></p>
+    </audio>
+</body>
+</html>

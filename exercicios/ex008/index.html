@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: orange;
+        }
+        p {
+            font-size: 13pt;
+        }
+    </style>
+</head>
+<body>
+   <h1>Principais formatações</h1>
+   <hr>
+   <h2>Negrito / Destaque</h2>
+   <p>Nesta frase temos um <b>termo em negrito</b>usando a tag B. (não semântico).</p>
+   <p>Nesta frase temos um <strong>termo em negrito</strong>usando a tag STRONG. (semântico).</p>
+   <hr>
+   <h2>Itálico / Ênfase</h2>
+   <p>Nesta frase temos um <i>termo em itálico</i> usando a tag I (não semântico).</p>
+   <p>Nesta frase temos um <en>termo em ênfase</en> usando a tag EN (semântico).</p>
+   <hr>
+   <h2>Texto marcado</h2>
+   <p>Podemos também criarmos um <mark>texto marcado</mark> com a tag MARK.</p>
+   <hr>
+   <h2>Texto grande / Texto pequeno</h2>
+   <p>Neste parágrafo temos: <big>Texto grande</big> / <smal>Texto pequeno</smal></p>
+   <hr>
+   <h2>Texto deletado</h2>
+   <p>Podemos marcar um <del>texto como deletado</del> para indicar que o mesmo deve ser lido mas não considerado.</p>
+   <hr>
+   <h2>Texto inserido</h2>
+   <p>Podemos marcar um <ins>texto como inserido</ins> para darmos ênfase e indicar que o mesmo foi inserido depois.</p>
+   <hr>
+   <h2>Texto sobrescrito</h2>
+   <p>Podemos escrever coisas do tipo: x<sup>20</sup>+3.</p>
+   <hr>
+   <h2>Texto subscrito</h2>
+   <p>Podemos escrever coisas do tipo: H<sub>2</sub>O.</p>
+   <hr>
+   <h2>Código fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p>
+    <p>Código em linguagem PYTHON. Para a indentação correta do código de usar a junção das tags: PRE + CODE.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um numero'))
+            if num % 2 == 0:
+                print(f'O numero {num} é PAR)
+            else:
+                print(f'O numero {num} é IMPAR)
+            print('FIM DO PROGRAMA')
+        </code>
+    </pre>
+    <hr>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
+    <hr>
+    <h2>Citações completas</h2>
+    <p>Segundo esse escritor famoso:</p>
+    <blockquote cite="https://books.google.com.br/books?id=_HBVQ-w5ZcoC&pg=PA26&dq=html&hl=pt-BR&sa=X&ved=2ahUKEwi7uKnxu7_uAhUtLLkGHbmHDi0Q6AEwAXoECAAQAg#v=onepage&q=html&f=false">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus numquam, expedita doloremque veniam nostrum nulla consequuntur libero ab laboriosam enim esse perspiciatis amet voluptate eveniet animi exercitationem soluta provident!
+    </blockquote>
+    <hr>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HYPERTEXT MARKED LANGUAGE">HTML</abbr> e <abbr title="CASCADING STYLE SHEETS">CSS</abbr>.Estou gostando.</p>
+    <hr>
+</body>
+</html>
